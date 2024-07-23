@@ -1,0 +1,18 @@
+:main
+a_name Luna NeoForge 1.21
+a_version 1
+a_author luna
+a_add_type c_forge
+a_add_version c_forge neoforge https://www.dropbox.com/scl/fi/v69laoa04d97u57oty3ac/neoforge-21.0.114-beta-installer.jar?rlkey=pft5lym6gm7iuwic8sr6ksxbu&st=6ly6kb84&dl=1 21
+
+:button NeoForge 1.21
+text Instalar NeoForge 1.21
+remove_server
+download_version y c_forge neoforge
+exec java -jar neoforge.jar --installServer
+config server_type forge
+exec echo "eula=true" >> eula.txt
+config server_version 1.21
+config_save
+say NeoForge instalado!
+sleep 3
